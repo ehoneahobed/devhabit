@@ -1,6 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 require('dotenv').config();
+const cors = require('cors');
 const routes = require('./routes'); // Importing the routes from the routes directory
 
 const app = express();
@@ -8,15 +9,16 @@ const port = process.env.PORT || 5000;
 
 // Middleware to parse JSON and urlencoded data
 app.use(express.json());
+app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 
 // Use consolidated routes
 app.use('/api/v1', routes);
 
 // Root Route
-app.get('/', (req, res) => {
-  res.send('Welcome to the devHabit API!');
-});
+// app.get('/', (req, res) => {
+//   res.send('Welcome to the devHabit API!');
+// });
 
 // Error Handling Middleware
 app.use((err, req, res, next) => {

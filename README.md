@@ -23,13 +23,19 @@ This API is built using:
 
 ### Installation
 1. Clone the repository:
+```
 git clone https://github.com/ehoneahobed/devhabit-api.git
+```
 
 2. Navigate to the project directory:
-```cd devhabit-api```
+```
+cd devhabit-api
+```
 
 3. Install dependencies:
-```npm install```
+```
+npm install
+```
 
 
 ### Setting Up the Environment
@@ -42,7 +48,9 @@ git clone https://github.com/ehoneahobed/devhabit-api.git
 
 ### Running the Application
 Run the application in development mode:
-```npm run dev```
+```
+npm run dev
+```
 
 
 
