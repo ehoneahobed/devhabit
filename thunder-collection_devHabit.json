@@ -1,0 +1,185 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "devHabit",
+    "dateExported": "2023-12-03T05:04:49.402Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "99310209-9496-4ba3-ac74-0227dbdd558b",
+            "colId": "c4032fc9-c4ae-43bc-b79e-9bd8ec36ce95",
+            "containerId": "",
+            "name": "user: register new",
+            "url": "localhost:5000/api/v1/users/register",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-12-03T03:26:12.671Z",
+            "modified": "2023-12-03T03:26:12.671Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"ehoneahobed\",\n  \"email\": \"ehoneahobed@hotmail.com\",\n  \"fullname\": \"Obed Ehoneah\",\n  \"password\": \"pass123\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "a5f4624d-b05a-4eb5-8376-e41702eb7879",
+            "colId": "c4032fc9-c4ae-43bc-b79e-9bd8ec36ce95",
+            "containerId": "",
+            "name": "user: login",
+            "url": "http://localhost:5000/api/v1/users/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-12-03T03:33:25.200Z",
+            "modified": "2023-12-03T03:33:25.200Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"ehoneahobed@hotmail.com\",\n  \"password\": \"pass123\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "f800f8c5-ffbd-42d0-b9dc-cce95f5f98cb",
+            "colId": "c4032fc9-c4ae-43bc-b79e-9bd8ec36ce95",
+            "containerId": "",
+            "name": "User: update",
+            "url": "http://localhost:5000/api/v1/users/update/656bf51e7eb6885859d2203e",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2023-12-03T03:35:15.584Z",
+            "modified": "2023-12-03T03:35:15.584Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"fullname\": \"Ehoneah Obed\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "1bb5c29d-7e98-41e7-a9c5-17fd6a652547",
+            "colId": "c4032fc9-c4ae-43bc-b79e-9bd8ec36ce95",
+            "containerId": "",
+            "name": "user: delete",
+            "url": "http://localhost:5000/api/v1/users/delete/656bf51e7eb6885859d2203e",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2023-12-03T03:36:19.609Z",
+            "modified": "2023-12-03T03:36:19.609Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "1f21964f-6339-46cc-aabf-c0ba13ec9e50",
+            "colId": "c4032fc9-c4ae-43bc-b79e-9bd8ec36ce95",
+            "containerId": "",
+            "name": "Goals: Create new ",
+            "url": "http://localhost:5000/api/v1/goals",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2023-12-03T04:43:00.083Z",
+            "modified": "2023-12-03T04:43:00.083Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTZiZjdjNDc1YzQ3ODgzNDhjNDczNmIiLCJpYXQiOjE3MDE1NzY5NTMsImV4cCI6MTcwMjE4MTc1M30.eSMF8ne33r8xhFIwGpm2jLfSo4poHMon29oFNJz5Ikg"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"title\": \"Develop a Full-Stack App\",\r\n  \"description\": \"Build a full-stack application using React and Node.js\",\r\n  \"category\": \"Project Development\",\r\n  \"startDate\": \"2023-07-01\",\r\n  \"completionDate\": \"2023-12-31\",\r\n  \"priority\": \"High\",\r\n  \"metrics\": [\r\n    {\r\n      \"type\": \"Milestones\",\r\n      \"milestones\": [\r\n        \"Setup project repository\",\r\n        \"Complete backend development\",\r\n        \"Complete frontend development\",\r\n        \"Deploy application\"\r\n      ]\r\n    },\r\n    {\r\n      \"type\": \"Code Commits\",\r\n      \"weeklyCommitGoal\": 15\r\n    }\r\n  ]\r\n}\r\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "b035b923-c2c5-4c66-823f-f81a45f571f3",
+            "colId": "c4032fc9-c4ae-43bc-b79e-9bd8ec36ce95",
+            "containerId": "",
+            "name": "Goal: Get all",
+            "url": "http://localhost:5000/api/v1/goals",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2023-12-03T04:53:03.030Z",
+            "modified": "2023-12-03T04:53:03.030Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTZiZjdjNDc1YzQ3ODgzNDhjNDczNmIiLCJpYXQiOjE3MDE1NzY5NTMsImV4cCI6MTcwMjE4MTc1M30.eSMF8ne33r8xhFIwGpm2jLfSo4poHMon29oFNJz5Ikg"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "baf3fd1e-0538-4c7a-bd46-a14420178e7a",
+            "colId": "c4032fc9-c4ae-43bc-b79e-9bd8ec36ce95",
+            "containerId": "",
+            "name": "Goal: Get a single goal by ID",
+            "url": "http://localhost:5000/api/v1/goals/656c06c963f17c9976ae1800",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2023-12-03T04:54:21.724Z",
+            "modified": "2023-12-03T04:54:21.724Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTZiZjdjNDc1YzQ3ODgzNDhjNDczNmIiLCJpYXQiOjE3MDE1NzY5NTMsImV4cCI6MTcwMjE4MTc1M30.eSMF8ne33r8xhFIwGpm2jLfSo4poHMon29oFNJz5Ikg"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "16ae543f-bbf2-4546-b64a-9136881280c4",
+            "colId": "c4032fc9-c4ae-43bc-b79e-9bd8ec36ce95",
+            "containerId": "",
+            "name": "Goal: Update specific goal",
+            "url": "http://localhost:5000/api/v1/goals/656c06c963f17c9976ae1800",
+            "method": "PUT",
+            "sortNum": 80000,
+            "created": "2023-12-03T05:03:20.156Z",
+            "modified": "2023-12-03T05:03:20.156Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTZiZjdjNDc1YzQ3ODgzNDhjNDczNmIiLCJpYXQiOjE3MDE1NzY5NTMsImV4cCI6MTcwMjE4MTc1M30.eSMF8ne33r8xhFIwGpm2jLfSo4poHMon29oFNJz5Ikg"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"title\": \"Updated Goal Title\",\r\n  \"description\": \"Updated description for the goal\"\r\n}\r\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "65cb8a72-66d3-4a7f-bdcb-77071e96b2e0",
+            "colId": "c4032fc9-c4ae-43bc-b79e-9bd8ec36ce95",
+            "containerId": "",
+            "name": "Goal: Delete single goal",
+            "url": "http://localhost:5000/api/v1/goals/656c06c963f17c9976ae1800",
+            "method": "DELETE",
+            "sortNum": 90000,
+            "created": "2023-12-03T05:04:24.777Z",
+            "modified": "2023-12-03T05:04:24.777Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTZiZjdjNDc1YzQ3ODgzNDhjNDczNmIiLCJpYXQiOjE3MDE1NzY5NTMsImV4cCI6MTcwMjE4MTc1M30.eSMF8ne33r8xhFIwGpm2jLfSo4poHMon29oFNJz5Ikg"
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
